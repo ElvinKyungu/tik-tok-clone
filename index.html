@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TikTok</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="../../Church/icomoon/style.css">
+	</head>
+	<body>
+		<div class="app__videos">
+			<div class="video">
+				<video class="video__player" src="production ID_4448895.mp4"></video>
+				<div class="videoSidebar">
+					<div class="videoSidebar__button">
+						<span class="material-icons icon-favorite_border"> </span>
+						<p>12</p>
+					</div>
+					<div class="videoSidebar__button">
+						<span class="material-icons icon-message"></span>
+						<p>23</p>
+					</div>
+
+					<div class="videoSidebar__button">
+						<span class="material-icons icon-share"></span>
+						<p>75</p>
+					</div>
+				</div>
+				<div class="videoFooter">
+					<div class="videoFooter__text">
+						<h3>Van Otis720</h3>
+						<p class="videoFooter__description">C'est du el-learning</p>
+
+						<div class="videoFooter__ticker">
+							<span class="material-icons videoFooter__icon"> music_note </span>
+							<marquee>Song name</marquee>
+						</div>
+					</div>
+					<img
+						src="https://static.thenounproject.com/png/934821-200.png"
+						alt=""
+						class="videoFooter__record"
+					/>
+				</div>
+			</div>
+			<div class="video">
+				<video class="video__player" poster="22.jpg" src="Je t'aimais, je t'aime...- Francis Cabrel  Romain - Jason - Matthieu  The Voice Kids 2016  Battle.mp4"></video>
+				<div class="videoSidebar">
+					<div class="videoSidebar__button">
+						<span class="material-icons icon-favorite_border"></span>
+						<p>12</p>
+					</div>
+					<div class="videoSidebar__button">
+						<span class="material-icons icon-message"></span>
+						<p>23</p>
+					</div>
+					<div class="videoSidebar__button">
+						<span class="material-icons icon-share"></span>
+						<p>75</p>
+					</div>
+				</div>
+				<div class="videoFooter">
+					<div class="videoFooter__text">
+						<h3>Jocelin Kisenga</h3>
+						<p class="videoFooter__description">Van Otis720</p>
+
+						<div class="videoFooter__ticker">
+							<span class="material-icons videoFooter__icon">C'est du el-learning </span>
+							<marquee>Song name</marquee>
+						</div>
+					</div>
+					<img
+						src="https://static.thenounproject.com/png/934821-200.png"
+						alt=""
+						class="videoFooter__record"
+					/>
+				</div>
+			</div>
+		</div>
+		<script>
+			const videos = document.querySelectorAll('video');
+
+			for (const video of videos) {
+				video.addEventListener('click', function () {
+				console.log('clicked');
+				if (video.paused) {
+					video.play();
+				} else {
+					video.pause();
+				}
+				});
+			}
+		</script>
+	</body>
+</html>
