@@ -33,8 +33,8 @@
 						<p class="videoFooter__description"></p>
 
 						<div class="videoFooter__ticker">
-							<span class="material-icons videoFooter__icon"> music_note </span>
-							<marquee>Song name</marquee>
+							<span class="material-icons icon-music_note"> </span>
+							<marquee>Rj Kanierra</marquee>
 						</div>
 					</div>
 					<img
@@ -66,8 +66,8 @@
 						<p class="videoFooter__description">Van Otis720</p>
 
 						<div class="videoFooter__ticker">
-							<span class="material-icons videoFooter__icon"></span>
-							<marquee>Song name</marquee>
+							<span class="material-icons icon-music_note"></span>
+							<marquee>Nicky Minaj</marquee>
 						</div>
 					</div>
 					<img
@@ -83,14 +83,17 @@
 
 			for (const video of videos) {
 				video.addEventListener('click', function () {
-				console.log('clicked');
-				if (video.paused) {
-					video.play();
-				} else {
-					video.pause();
-				}
+					if (video.paused) {
+						video.play();
+					} else {
+						video.pause();
+					}
 				});
+				
 			}
+			document.addEventListener('scroll', ()=>{
+				console.log('hey');
+			})
 		</script>
 	</body>
 </html>

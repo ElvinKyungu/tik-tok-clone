@@ -118,7 +118,9 @@
   .videoFooter__description {
     padding-bottom: 20px;
   }
-  
+  .icon-music_note{
+    font-size: 30px;
+  }
   @media (max-width: 425px) {
     .app__videos {
       width: 100%;
