@@ -87,7 +87,7 @@
     height: 50px;
     filter: invert(1);
     position: absolute;
-    bottom: 0;
+    bottom: -1rem;
     right: 20px;
   }
   
